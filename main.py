@@ -7,3 +7,6 @@ print("What would you like to do")
 
 a = ex.convertRates("GBP", "THB")
 print(a)
+
+# b = ex.getExchangeRates("USD")
+# print(b)
