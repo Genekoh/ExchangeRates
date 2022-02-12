@@ -51,13 +51,12 @@ def getExchangeRates(symbols):
     return rates
 
 
-# Convert Rates of two currencies using USD for comparison
+# Convert Rates of two currencies using EUR for comparison
 def convertRates(base, to):
     r = getExchangeRates([base, to])
 
-    baseRate = r[base] if (base != "USD") else 1
-    toRate = r[to] if (to != "USD") else 1
+    baseRate = r[base] if (base != "EUR") else 1
+    toRate = r[to] if (to != "EUR") else 1
 
     finalRate = round(toRate / baseRate, 2)
     return finalRate
-

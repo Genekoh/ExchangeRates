@@ -6,5 +6,4 @@ def listToCommaSepString(l):
         else:
             fs += f",{s}"
 
-    # return fs
-
+    return fs
